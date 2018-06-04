@@ -15,7 +15,7 @@ module.exports = function(){
         },
         senha:{
             type: String,
-            required: true
+            required: true,
         }
     });
     return mongoose.model('User', schema); 

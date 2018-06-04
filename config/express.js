@@ -1,7 +1,9 @@
 let express = require('express');
+let bodyParser = require('body-parser');
+
 let routerUsers = require('../app/routes/user');
 let routerPosts = require('../app/routes/post');
-let bodyParser = require('body-parser');
+
 
 module.exports = function(){
     let app = express();

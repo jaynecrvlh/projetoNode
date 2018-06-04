@@ -7,4 +7,7 @@ module.exports = function(app){
     app.use("/api/users/", auth.checar);
     app.get("/api/users", controller.listarUsers);
     app.get("/api/users/:id", controller.obterUser);
+    app.get('/api/users/:id/posts', controller.postUser);
+    app.put("/api/users/", controller.editarUser)
+    app.delete("/api/users", controller.excluirUser);
 }
